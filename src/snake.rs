@@ -237,7 +237,7 @@ impl Draw for Snake {
             head.point.y_actual,
             color,
             DrawTextureParams {
-                dest_size: Some(Vec2::new(32., 32.)),
+                dest_size: Some(Vec2::new(33., 33.)),
                 source: None,
                 rotation: texture_rotation(head.direction),
                 flip_x: false,
@@ -254,7 +254,7 @@ impl Draw for Snake {
             neck.point.y_actual,
             color,
             DrawTextureParams {
-                dest_size: Some(Vec2::new(32., 32.)),
+                dest_size: None,
                 source: None,
                 rotation: texture_rotation(neck.direction),
                 flip_x: false,
@@ -276,7 +276,7 @@ impl Draw for Snake {
                     segment.point.y_actual,
                     color,
                     DrawTextureParams {
-                        dest_size: Some(Vec2::new(32., 32.)),
+                        dest_size: None,
                         source: None,
                         rotation: texture_rotation(segment.direction),
                         flip_x: false,
@@ -294,7 +294,7 @@ impl Draw for Snake {
             tail.point.y_actual,
             color,
             DrawTextureParams {
-                dest_size: Some(Vec2::new(32., 32.)),
+                dest_size: None,
                 source: None,
                 rotation: texture_rotation(tail.direction),
                 flip_x: false,
